@@ -2,7 +2,7 @@
 import pandas as pd
 import streamlit as st
 
-st.header("Om Namag Shivay")
+st.header("Om Namah Shivay")
 name=st.text_input(label="Emter your name" , placeholder="Type your Name")
 age: float= st.text_input(label="Enter Your Age" , placeholder="Type your Age", value=0)
 occupation= st.text_input(label="Enter your Occupation", placeholder="Type your occupation")
@@ -18,15 +18,16 @@ st.data_editor(df)
 if st.button("Submit"): #button()
     st.header(f"My name is {name}")
     st.header(f"I'm {int(age)} years old")
-    st.header(f"I'm wotking as {(occupation)} in TCS")
+    st.header(f"I'm wotking as {(occupation)}")
     
     st.write(f"My name is {name}")
     st.write(f"I'm {int(age)} years old")
-    st.write(f"I'm wotking as {(occupation)} in TCS")
+    st.write(f"I'm wotking as {(occupation)}")
 
-    st.write["name"].append(name)
-    st.write["age"].append(age)
-    df=st.dataframe(df)
+   # st.write["name"].append(name)
+    #!--st.write["age"].append(age)
+    #!--df=st.dataframe(df)
+
 
 
 
